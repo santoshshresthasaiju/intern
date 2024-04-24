@@ -267,3 +267,43 @@ print(usets)
 print("symdup")
 usets = itemset.symmetric_difference_update(additemset)
 print(usets)
+
+
+#Dictionary
+dictl ={
+    "language" : "python",
+    "year" : 1991,
+    "created by":"Guido van Rossum"
+}
+
+x = dictl.items()
+print(x) #before
+dictl["year"]= 2024
+print(x) #after
+
+#checking if key exists
+dictl ={
+    "language" : "python",
+    "year" : 1991,
+    "created by":"Guido van Rossum"
+}
+if "language" in dictl:
+    print("yes")
+
+#change values
+dictl ={
+    "language" : "python",
+    "year" : 1991,
+    "created by":"Guido van Rossum"
+}
+dictl["created by"] = "Santosh Shrestha"
+print(dictl)
+
+dictl.update({"year" : 2024})
+print(dictl)
+
+dictl["Name"] = "Santosh Shrestha"
+print(dictl)
+
+dictl.pop("Name")
+print(dictl)
