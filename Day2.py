@@ -307,3 +307,48 @@ print(dictl)
 
 dictl.pop("Name")
 print(dictl)
+
+#for loop
+for x in dictl:
+    print(dictl[x])
+
+#values()
+for x in dictl.values():
+    print(x)
+
+#copy dict
+
+college ={
+    "College Name" : "Birendra",
+    "Course" : "CSIT",
+    "Year" : 2060
+}
+Details = college.copy()
+print(Details)
+
+#dict() function
+Details = dict(college)
+print(Details)
+
+#Nested dictionary
+mydict ={
+    "program" :{
+        "language" : "python",
+        "year" : 1991,
+        "created by":"Guido van Rossum"
+    },
+    "college":{
+        "College Name" : "Birendra",
+        "Course" : "CSIT",
+        "Year" : 2060
+    }
+}
+
+#if statement and Elif
+x =1000
+y =2000
+if y > x:
+    print("y is greater than x")
+elif y < x :
+    print("x is greater than y")
+
